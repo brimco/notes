@@ -22,8 +22,8 @@ title: notes
 email: bri.mcomber@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Web dev tips and notes.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "brimco.github.io/notes" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/notes" # the subpath of your site, e.g. /blog
+url: "https://brimco.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  brimco
 
 # Build settings
