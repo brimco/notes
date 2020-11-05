@@ -12,3 +12,15 @@ footer {
     text-align: center;
 }
 
+.categories {
+    float: left !important;
+}
+
+.site-header:nth-child(1)  {
+    background-color: $grey-color-light;
+}
+.site-header:nth-child(2)  {
+    background-color: shite;
+    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+}
