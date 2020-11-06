@@ -8,6 +8,8 @@ order: 3
 # Database
 By default, django uses a SQLite database. If you are using this, no other setup is needed.
 
+[Click here to set up a PostgreSQL database for Django on Heroku.]({% post_url 2020-11-06-setting-up-with-django %})
+
 The [Admin Site]({% post_url 2020-11-05-admin-site %}) is an easy way to view and edit your database.
 
 # Migrations
