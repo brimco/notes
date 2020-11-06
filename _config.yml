@@ -54,3 +54,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Assign url structure for posts
+permalink: /:categories/:title/
