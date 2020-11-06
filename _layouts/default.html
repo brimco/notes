@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  
+  <script src="{{ site.js_ext | relative_url }}category.js"></script>
 
   {%- include head.html -%}
 
@@ -9,7 +11,8 @@
     {%- include category_header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      {%- include side_menu.html -%}
+      <div class="wrapper" style='padding-top: 2em;'>
         {{ content }}
       </div>
     </main>

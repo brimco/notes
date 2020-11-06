@@ -16,7 +16,7 @@
       <div class="trigger">
         {% assign sorted_categories = site.categories | sort %}
         {% for category in sorted_categories %}
-          <a class="page-link" href="/">{{ category[0] | capitalize }}</a>
+          <button onclick="showCategory('{{ category[0] }}');">{{ category[0] | capitalize }}</button>
         {% endfor %}
       </div>
     </nav>
