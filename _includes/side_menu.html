@@ -5,7 +5,7 @@
         {% assign name = category[0] %}
 
         <div id='{{ name }}'>
-            {% assign posts = site.categories[name] %}
+            {% assign posts = site.categories[name] | sort: "order" %}
             {% for post in posts %}
                 <div>
                     <a class="page-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
