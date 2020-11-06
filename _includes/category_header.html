@@ -13,10 +13,10 @@
         </span>
       </label>
 
-      <div class="trigger">
+      <div class="trigger" id='category-header'>
         {% assign sorted_categories = site.categories | sort %}
         {% for category in sorted_categories %}
-          <button onclick="showCategory('{{ category[0] }}');">{{ category[0] | capitalize }}</button>
+          <button class='category-btn' onclick="showCategory('{{ category[0] }}');">{{ category[0] | capitalize }}</button>
         {% endfor %}
       </div>
     </nav>
