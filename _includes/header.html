@@ -1,7 +1,4 @@
 <header class="site-header" role="banner">
-
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    <a rel="author" href="{{ "/" | relative_url }}"><img class="logo" src="{{ site.img_ext | relative_url }}logo.png"></a>
-  </div>
+  {%- assign default_paths = site.pages | map: "path" -%}
+  <a rel="author" href="{{ "/" | relative_url }}"><img class="logo" src="{{ site.img_ext | relative_url }}logo.png"></a>
 </header>
