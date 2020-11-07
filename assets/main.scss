@@ -56,3 +56,30 @@ footer {
 .category-btn:focus {
     outline: 0;
 }
+
+#display-color {
+    padding: 1em;
+    padding-left: 0;
+}
+#display-color > div {
+    padding: 0.5em;
+    padding-left: 0;
+    background-color: white;
+    border-radius: 1em;
+    width: fit-content;
+}
+
+#choose-color, #choose-color:focus {
+    height: 1.5em;
+    width: 6em;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+#box-shadow {
+    border: 2px solid black;
+    padding: 0.5em;
+}
+#box-shadow > table, #text-shadow > table {
+    width: fit-content;
+}
