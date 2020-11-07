@@ -9,26 +9,20 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-  {%- endif -%}
+  {% assign sorted_categories = site.categories | sort %}
+  <div id='homepage'>
+    {% for category in sorted_categories %}
+      {% assign name = category[0] %}
+      <h2>{{ name | capitalize }}</h2>
+      
+      {% assign posts = site.categories[name] | sort: "order" %}
+      {% for post in posts %}
+        <div>
+          <a class="page-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
 
   <script>
     showCategory('none')
