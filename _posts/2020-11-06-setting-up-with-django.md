@@ -3,7 +3,7 @@ layout: post
 title:  "Setting Up Django on Heroku"
 date:   2020-11-06 15:28:00 -0700
 categories: django heroku
-order: 1
+order: 2
 ---
 [Create the django app]({% post_url 2020-11-05-create-and-run-a-project %}) and commit to a git repository.
 

@@ -96,4 +96,4 @@ python manage.py runserver xxx.xxx.x.x:8000
 
 {% endhighlight %}
 
-To run everywhere: Heroku
+To run everywhere: [Set up with Heroku]({% post_url 2020-11-06-setting-up-with-django %})
