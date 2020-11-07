@@ -91,10 +91,22 @@ footer {
     border-bottom: 2px solid gray;
 }
 
-#box-shadow {
-    border: 2px solid black;
+#box-shadow , #box-border {
+    border: 1px solid black;
     padding: 0.5em;
 }
-#box-shadow > table, #text-shadow > table {
+.fit-width{
     width: fit-content;
+}
+
+input, select {
+    border: 1px solid $grey-color-light;
+    padding: 0.5em;
+    transition: 0.5s;
+    font-size: 1em;
+    background-color: white;
+}
+
+input:hover, select:hover {
+    border: 1px solid $grey-color-dark;
 }
