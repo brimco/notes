@@ -1,5 +1,6 @@
 <div id='side-menu'>
-        
+    <button id='close-sidebar' onclick="hideSidebar()">&times;</button>
+
     {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
         {% assign name = category[0] %}
